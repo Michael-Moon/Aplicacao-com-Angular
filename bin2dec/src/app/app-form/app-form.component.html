@@ -1,0 +1,30 @@
+<div class="container color" style="margin-top: 10%; padding: 2%;">
+    
+    <img src="../../assets/angularLogo.png" class="center">     
+
+    
+    <div class="row">
+        <div class="center">
+            <h1>BIN2DEC</h1>
+        </div>        
+    </div>
+    
+    <div class="form">
+        
+        <h2 class="mt-5">Binario para Decimal</h2>
+
+        <br>
+
+        <h4  class="mt-5">Valor binario:</h4>
+
+        <div class="col-lg-3 col-md-3 col-sm-3 form-group contact-forms">
+
+            <input type="text" size="30" placeholder="0101..." maxlength="8" 
+            (keyup)="onKeyUp($event)">    
+
+        </div>
+
+        <h4 class="mt-5">Decimal equivalante: {{ binarioAtual }}</h4>
+      
+    </div>
+</div>
